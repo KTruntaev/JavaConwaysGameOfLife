@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifegame.gameoflifejfx.LifeGameController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="103.0" layoutX="519.0" layoutY="411.0" stroke="BLACK" strokeType="INSIDE" width="218.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="13.0" layoutY="13.0" stroke="BLACK" strokeType="OUTSIDE" styleClass="rectangle" width="500.0" />
+      <Canvas fx:id="displayGrid" height="500.0" layoutX="13.0" layoutY="13.0" width="500.0" />
+      <Label fx:id="generationLabel" layoutX="530.0" layoutY="12.0" text="Generation: 0">
+         <font>
+            <Font name="Yu Gothic Regular" size="21.0" />
+         </font></Label>
+      <Button fx:id="startButton" layoutX="533.0" layoutY="470.0" mnemonicParsing="false" onAction="#onStartButtonClick" prefHeight="23.0" prefWidth="85.0" text="Run">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font></Button>
+      <Button fx:id="oneGenButton" layoutX="620.0" layoutY="433.0" mnemonicParsing="false" onAction="#onOneStepButtonClick" prefHeight="27.0" prefWidth="103.0" text="+1 Generation">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font></Button>
+      <Button layoutX="533.0" layoutY="433.0" mnemonicParsing="false" onAction="#onRegenButtonClick" prefHeight="27.0" prefWidth="85.0" text="Regenerate">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font></Button>
+      <Button layoutX="620.0" layoutY="470.0" mnemonicParsing="false" onAction="#onPauseButtonClick" prefHeight="23.0" prefWidth="103.0" text="Pause">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font></Button>
+      <Slider fx:id="rowSlider" layoutX="532.0" layoutY="94.0" max="50.0" minorTickCount="5" onMouseDragged="#sectorRowUpdate" prefHeight="14.0" prefWidth="80.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="sizeSlider" layoutX="519.0" layoutY="152.0" max="250.0" minorTickCount="5" onMouseDragged="#sectorSizeUpdate" prefHeight="37.0" prefWidth="218.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="125.0" />
+      <Label layoutX="542.0" layoutY="65.0" text="Sector Row" />
+      <Label layoutX="648.0" layoutY="65.0" text="Sector Column" />
+      <Label layoutX="600.0" layoutY="131.0" text="Sector Size" />
+      <Slider fx:id="colSlider" layoutX="647.0" layoutY="94.0" max="50.0" minorTickCount="5" onMouseDragged="#sectorColumnUpdate" prefHeight="14.0" prefWidth="80.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="upsSlider" layoutX="559.0" layoutY="233.0" max="60.0" min="10.0" minorTickCount="5" onMouseDragged="#upsUpdate" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="35.0" />
+      <Label layoutX="574.0" layoutY="216.0" text="Updates per Second" />
+   </children>
+</Pane>

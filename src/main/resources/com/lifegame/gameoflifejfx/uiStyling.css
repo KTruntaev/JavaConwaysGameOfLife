@@ -1,0 +1,40 @@
+.button{
+    -fx-background-color: #29A19C;
+    -fx-border-style: solid;
+
+    -fx-font-weight: bold;
+    -fx-font-family: "Yu Gothic UI";
+    -fx-text-fill: white;
+
+
+}
+.button:hover{
+    -fx-background-color: #6695e2
+}
+.button:pressed{
+    -fx-background-color: blue;
+}
+
+
+.slider{
+    -fx-background-color: #37AA9C;
+
+    -fx-tick-label-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Yu Gothic UI";
+    -fx-text-fill: white;
+}
+
+.pane{
+    -fx-background-color: #27323A;
+}
+
+.rectangle{
+    -fx-fill: #435055;
+    -fx-stroke: transparent;
+}
+
+.label{
+    -fx-text-fill: white;
+    -fx-font-family: Futura;
+}
