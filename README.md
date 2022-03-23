@@ -6,7 +6,7 @@ The Conway's Game of Life implementation was expanded with RGB "DNA" which allow
 
 
 ### GUI Demonstration: 
-The GUI is Work-In-Progress, with many features planned, as can be seen by the below TODO list on the bottom of the README:
+The GUI is Work-In-Progress, with many features planned, as can be seen by the TODO list at the bottom of the README:
 
 <img width="1302" alt="Conway's Game of Life (1)" src="https://user-images.githubusercontent.com/72285578/159761336-9b8b1af6-b03f-4aca-a504-6d8425795732.png">
 
